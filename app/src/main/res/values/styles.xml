@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+
+<!--    <style name="spinnerAnimation">-->
+<!--        <item name="android:windowEnterAnimation">@anim/come</item>-->
+<!--        <item name="android:windowExitAnimation">@anim/go</item>-->
+<!--    </style>-->
+<!--    <style name="slide_down_Animation">-->
+<!--        <item name="android:windowEnterAnimation">@anim/slide_in_down</item>-->
+<!--        <item name="android:windowExitAnimation">@anim/slide_out_down-->
+
+<!--        </item>-->
+<!--    </style>-->
+    <style name="txt_margin_5_txt_20_brown">
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop"   >5dp</item>
+        <item name="android:layout_marginRight" >5dp</item>
+        <item name="android:layout_marginLeft"  >5dp</item>
+        <item name="android:textSize"> 20dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:text">@string/txt_preview</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor" >#83520D</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="txt_marg_t_l_r_15_txt_20_blue">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginTop"   >15dp</item>
+        <item name="android:layout_marginRight" >15dp</item>
+        <item name="android:layout_marginLeft"  >15dp</item>
+        <item name="android:textSize"> 20dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:text">@string/txt_preview</item>
+        <item name="android:textColor" >#FFFFFF</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="frame_corner_curved_beige">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:background">@drawable/beige_curve_corners</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="circle_button">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_margin">@dimen/margin_small</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:foreground">@color/colorPrimary</item>
+        <item name="android:state_long_pressable">true</item>
+        <item name="android:colorPressedHighlight">#EC1669</item>
+        <item name="android:onClick">continue_func</item>
+    </style>
+
+
+
+
+    <style name="ThemeWithCorners" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/white</item>
+    </style>
+
+</resources>
