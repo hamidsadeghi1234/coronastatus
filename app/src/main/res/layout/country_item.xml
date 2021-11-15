@@ -44,12 +44,12 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="1dp"
-        android:background="@drawable/yellow_gradiant"
+        android:background="@drawable/beige_curve_corners"
         android:padding="1dp"
         android:text="123456789"
-        android:textSize="13dp"
         android:textAlignment="center"
         android:textColor="@android:color/black"
+        android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline1"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -60,7 +60,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="1dp"
-        android:background="@drawable/red_gradiant"
+        android:background="@drawable/beige_curve_corners"
         android:padding="1dp"
         android:text="12345678"
         android:textAlignment="center"
@@ -72,46 +72,32 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/recovered_tv"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="1dp"
-        android:background="@drawable/green_gradiant"
-        android:padding="1dp"
-        android:text="12345678"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="13dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline5"
-        app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
         android:id="@+id/cases_today_tv"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="1dp"
-        android:background="@drawable/yellow_gradiant"
+        android:background="@drawable/beige_curve_corners"
         android:padding="1dp"
         android:text="1234567"
-        android:textSize="13dp"
         android:textAlignment="center"
         android:textColor="@android:color/black"
+        android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/deaths_today_tv"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="1dp"
-        android:background="@drawable/red_gradiant"
+        android:background="@drawable/beige_curve_corners"
         android:padding="1dp"
         android:text="1234567"
-        android:textSize="13dp"
         android:textAlignment="center"
         android:textColor="@android:color/black"
+        android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
         app:layout_constraintStart_toStartOf="parent"
@@ -136,26 +122,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.55" />
+        app:layout_constraintGuide_percent="0.53" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.39" />
+        app:layout_constraintGuide_percent="0.35" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.23039216" />
+        app:layout_constraintGuide_end="263dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.12254902" />
+        app:layout_constraintGuide_end="336dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

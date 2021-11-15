@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     Button update_btn,Continents_btn;
     CoronaDB coronaDB;
     float death_percent;
-    TextView cases_tv,deaths_tv,recovered_tv,cases_today_tv,deaths_today_tv,last_update_tv, world_cases_tv,world_recovered_tv,
+    TextView cases_tv,deaths_tv,cases_today_tv,deaths_today_tv,last_update_tv, world_cases_tv,world_recovered_tv,
     world_deaths_tv,most_tv,max_test_tv,max_cases_tv,max_deaths_tv,max_recovered_percent_tv,max_deaths_percent_tv,max_recovered_tv;
     List<CountryTable> just_countries;
     String[] UnWanted={ "Total:","North America","Europe","Asia","South America","Oceania","Africa","World",""};
@@ -103,7 +103,7 @@ boolean update=false;
 
         deaths_tv.      setOnClickListener(new View.OnClickListener(){@Override public void onClick(View v) { List<CountryTable> countryTables = coronaDB.coronaDao().sortByDeaths     (UnWanted);setUpRecyclerView(countryTables); }});
         cases_tv.       setOnClickListener(new View.OnClickListener(){@Override public void onClick(View v) { List<CountryTable> countryTables = coronaDB.coronaDao().sortByCases      (UnWanted);setUpRecyclerView(countryTables); }});
-        recovered_tv.   setOnClickListener(new View.OnClickListener(){@Override public void onClick(View v) { List<CountryTable> countryTables = coronaDB.coronaDao().sortByRecovered  (UnWanted);setUpRecyclerView(countryTables); }});
+    //    recovered_tv.   setOnClickListener(new View.OnClickListener(){@Override public void onClick(View v) { List<CountryTable> countryTables = coronaDB.coronaDao().sortByRecovered  (UnWanted);setUpRecyclerView(countryTables); }});
         cases_today_tv. setOnClickListener(new View.OnClickListener(){@Override public void onClick(View v) { List<CountryTable> countryTables = coronaDB.coronaDao().sortByTodayCases (UnWanted);setUpRecyclerView(countryTables); }});
         deaths_today_tv.setOnClickListener(new View.OnClickListener(){@Override public void onClick(View v) { List<CountryTable> countryTables = coronaDB.coronaDao().sortByTodayDeaths(UnWanted);setUpRecyclerView(countryTables); }});
      //   Continents_btn. setOnClickListener(new View.OnClickListener(){@Override public void onClick(View v) { Intent intent=new Intent(context,ContinentsActivity.class);startActivity(intent); }});
@@ -111,7 +111,7 @@ boolean update=false;
     void تنظیمات_اولیه(){
     cases_tv           =findViewById(R.id.cases_tv          );
     deaths_tv          =findViewById(R.id.deaths_tv         );
-    recovered_tv       =findViewById(R.id.recovered_tv      );
+  //  recovered_tv       =findViewById(R.id.recovered_tv      );
     cases_today_tv     =findViewById(R.id.cases_today_tv    );
     deaths_today_tv    =findViewById(R.id.deaths_today_tv   );
     update_btn         =findViewById(R.id.update_btn        );

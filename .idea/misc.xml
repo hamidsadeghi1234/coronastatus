@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Programing/androidStudioProjects/PersonalApplication/CoronaStatus/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Programing/androidStudioProjects/PersonalApplication/CoronaStatus/app/src/main/res/layout/activity_continents.xml" value="0.2609375" />
+        <entry key="..\:/Programing/androidStudioProjects/PersonalApplication/CoronaStatus/app/src/main/res/layout/activity_main.xml" value="0.30134357005758156" />
+        <entry key="..\:/Programing/androidStudioProjects/PersonalApplication/CoronaStatus/app/src/main/res/layout/country_details_avtivity.xml" value="0.2609375" />
+        <entry key="..\:/Programing/androidStudioProjects/PersonalApplication/CoronaStatus/app/src/main/res/layout/country_item.xml" value="0.75" />
+        <entry key="..\:/Programing/androidStudioProjects/PersonalApplication/CoronaStatus/app/src/main/res/menu/menu.xml" value="0.2609375" />
       </map>
     </option>
   </component>

@@ -31,7 +31,7 @@ public class CountryAdaptor extends RecyclerView.Adapter <CountryAdaptor.Countri
             holder.todayCases_tv .setText(String.valueOf(countryTable.getTodayCases()) );
             holder.deaths_tv     .setText(String.valueOf(countryTable.getDeaths())     );
             holder.todayDeaths_tv.setText(String.valueOf(countryTable.getTodayDeaths()));
-            holder.recovered_tv  .setText(String.valueOf(countryTable.getRecovered())  );
+         //   holder.recovered_tv  .setText(String.valueOf(countryTable.getRecovered())  );
             holder.row_tv  .setText(" "+(position+1) );
             holder.country_tv.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -52,7 +52,7 @@ public class CountryAdaptor extends RecyclerView.Adapter <CountryAdaptor.Countri
             private TextView todayCases_tv;
             private TextView deaths_tv;
             private TextView todayDeaths_tv;
-            private TextView recovered_tv;
+         //   private TextView recovered_tv;
             private TextView  row_tv;
             public CountriesViewHolder(@NonNull View itemView) {
                 super(itemView);
@@ -61,7 +61,7 @@ public class CountryAdaptor extends RecyclerView.Adapter <CountryAdaptor.Countri
                 todayCases_tv =itemView.findViewById(R.id.cases_today_tv );
                 deaths_tv     =itemView.findViewById(R.id.deaths_tv     );
                 todayDeaths_tv=itemView.findViewById(R.id.deaths_today_tv);
-                recovered_tv  =itemView.findViewById(R.id.recovered_tv  );
+           //     recovered_tv  =itemView.findViewById(R.id.recovered_tv  );
                 row_tv    =itemView.findViewById(R.id.row_tv    );}
         }
     }
