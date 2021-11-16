@@ -6,6 +6,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
+
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -132,6 +134,7 @@ boolean update=false;
             .allowMainThreadQueries().build();
         update_statistics();
     }
+@SuppressLint({"SetTextI18n", "DefaultLocale"})
 private void update_statistics(){
     just_countries= coronaDB.coronaDao().filter_Unwanted(UnWanted);
     if(just_countries.size()>10) {
@@ -152,11 +155,11 @@ private void update_statistics(){
 
     private void setUpRecyclerView(List<CountryTable> countryTables){
         RecyclerView recyclerView=findViewById(R.id.recycler_view1);
-        CountryAdaptor usersAdapter=new CountryAdaptor(MainActivity.this,countryTables);
+        CountryAdaptor countryAdaptor=new CountryAdaptor(MainActivity.this,countryTables);
         //recyclerView.setLayoutManager((new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)));
         // recyclerView.setLayoutManager((new LinearLayoutManager(RetrofitActivity.this,LinearLayoutManager.HORIZONTAL,false)));
         recyclerView.setLayoutManager((new GridLayoutManager(this,1, LinearLayoutManager.VERTICAL,false)));
-        recyclerView.setAdapter(usersAdapter);
+        recyclerView.setAdapter(countryAdaptor);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
